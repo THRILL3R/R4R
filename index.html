@@ -18,14 +18,17 @@
             touch-action: none;
         }
 
-        /* --- MODIFICATION: Added styles for the background video --- */
+        /* --- MODIFICATION: Updated styles for a perfectly centered background video --- */
         #bg-video {
             position: fixed;
-            right: 0;
-            bottom: 0;
-            width: 400px;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
             height: auto;
             z-index: -1;
+            transform: translateX(-50%) translateY(-50%);
             /* Optional: Add a filter for better text readability */
             filter: brightness(0.5);
         }

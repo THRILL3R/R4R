@@ -196,7 +196,7 @@
     </header>
     <div class="header-text">
         <h1>TechOps</h1>
-        <p>SELECT TO REGISTER</p>
+        <p>SELECT TO REGISTER</p> 
     </div>
     
     <div class="wrapper">
@@ -237,8 +237,10 @@
     <script>
         const inner = document.querySelector('.inner');
         const wrapper = document.querySelector('.wrapper');
-        const cardCount = 4;
+        
+        const cardCount = parseInt(getComputedStyle(inner).getPropertyValue('--quantity'));
         const anglePerCard = 360 / cardCount;
+
 
         let isDragging = false;
         let startX;
